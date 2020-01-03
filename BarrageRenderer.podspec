@@ -5,7 +5,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/unash/BarrageRenderer.git"
   s.license      = { :type => 'MIT License', :file => 'LICENSE' }
   s.author       = { "unash" => "unash@exbye.com" }
-  s.platform     = :ios, '6.0'
+  s.ios.deployment_target = "6.0"
+  s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/unash/BarrageRenderer.git", :branch => "master" }
   s.source_files  = "BarrageRenderer/*.{h,m}","BarrageRenderer/*/*.{h,m}"
 end
